@@ -10,3 +10,24 @@ help = [
     'clear          reset the page',
     "<br>",
 ];
+banner = [
+    "<pre>",
+    "(~    _|_ .|  (~|_  _  _ _ _  _ ",
+    "_)|_|_\| |||  _)| |(_|| | | |(_|",
+
+    "</pre>"
+
+];
+
+whoami = [
+    "<br>",
+    "Sushil Sharma",
+    "I have expertise designing, developing, and implementing apps and solutions using a variety of technologies and programming languages. ",
+    "<br>"
+];
+
+education = [
+    "<br>",
+    "Bachelor of Computer",
+    "<br>"
+];
