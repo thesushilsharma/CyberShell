@@ -42,3 +42,11 @@ skills = [
     "CSS3",
     "<br>"
 ];
+
+
+contact = [
+    "<br>",
+    "Github",
+    "Linkdein",
+    "<br>"
+];
