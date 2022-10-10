@@ -31,3 +31,14 @@ education = [
     "Bachelor of Computer",
     "<br>"
 ];
+
+skills = [
+    "<br>",
+    "CPP",
+    "Java",
+    "PHP",
+    "JavaScript",
+    "HTML5",
+    "CSS3",
+    "<br>"
+];
