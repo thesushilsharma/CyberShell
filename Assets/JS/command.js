@@ -10,6 +10,7 @@ help = [
     'clear          reset the page',
     "<br>",
 ];
+
 banner = [
     "<pre>",
     "(~    _|_ .|  (~|_  _  _ _ _  _ ",
@@ -43,12 +44,9 @@ skills = [
     "<br>"
 ];
 
-
 contact = [
     "<br>",
     "Github",
     "Linkdein",
     "<br>"
 ];
-
-clear = [];

@@ -1,0 +1,1 @@
+var terminal = document.getElementById("terminal");
