@@ -50,3 +50,5 @@ contact = [
     "Linkdein",
     "<br>"
 ];
+
+clear = [];
