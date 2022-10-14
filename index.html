@@ -25,7 +25,20 @@
         <hr />
         <section>
             <article>
-                <textarea name="textarea" cols="70" rows="2"></textarea>
+                <div id="command">
+                    <form>
+                        <input id="terminal" type="text" placeholder="Try typing ? or help..."
+                            onclick="switchfunction()" autocomplete="off">
+                    </form>
+
+                    <div>
+                        <button onclick="switchfunction()">Execute</button>
+                    </div>
+
+                    <div>
+                        <span id="output"></span>
+                    </div>
+                </div>
             </article>
             <aside>
 
