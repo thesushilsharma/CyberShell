@@ -23,27 +23,30 @@
 
         </nav>
         <hr />
-        <section>
-            <article>
-                <div id="command">
-                    <form>
-                        <input id="terminal" type="text" placeholder="Try typing ? or help..."
-                            onclick="switchfunction()" autocomplete="off">
-                    </form>
-
-                    <div>
-                        <button onclick="switchfunction()">Execute</button>
+        <main>
+            <section>
+                <article>
+                    <div id="command">
+                        <div>
+                            <input type="text" id="terminal" placeholder="Try typing ? or help..."
+                                onchange="switchfunction()" list="commandlist">
+                            <datalist id="commandlist">
+                                <option value="help"></option>
+                                <option value="whoami"></option>
+                                <option value="education"></option>
+                                <option value="skills"></option>
+                                <option value="contact"></option>
+                            </datalist>
+                        </div>
                     </div>
-
                     <div>
                         <span id="output"></span>
                     </div>
-                </div>
-            </article>
-            <aside>
-
-            </aside>
-        </section>
+                </article>
+                <aside>
+                </aside>
+            </section>
+        </main>
         <hr />
         <footer>
             <small>

@@ -32,5 +32,5 @@ function switchfunction() {
     }
 
     document.getElementById("output").innerHTML = text;
-    
+
     }

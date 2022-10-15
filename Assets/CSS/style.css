@@ -9,3 +9,9 @@ body {
     font-family: cursor, monospace;
     overflow-x: hidden;
   }
+
+  #command {
+    cursor: text;
+    height: 50px;
+    color: #73abad;
+  }
