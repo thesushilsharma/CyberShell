@@ -30,6 +30,7 @@ function switchfunction() {
         text = "Command not found";
         break;
     }
+
     document.getElementById("output").innerHTML = text;
     
     }
