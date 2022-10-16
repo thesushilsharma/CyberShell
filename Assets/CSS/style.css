@@ -22,8 +22,13 @@ section {
   color: #73abad;
 }
 
+#command::before {
+  color: #a9f403;
+  content: "visitor@thesushilsharma:~$";
+}
+
 #output {
-  color: #30f403;
+  color: #f44e03;
   font-size: 20px;
 }
 
