@@ -27,20 +27,20 @@
             <section>
                 <article>
                     <div id="command">
-                        <div>
-                            <input type="text" id="terminal" placeholder="Try typing ? or help..."
-                                onchange="switchfunction()" list="commandlist">
-                            <datalist id="commandlist">
-                                <option value="help"></option>
-                                <option value="whoami"></option>
-                                <option value="education"></option>
-                                <option value="skills"></option>
-                                <option value="contact"></option>
-                            </datalist>
-                        </div>
+                        <input type="text" id="terminal" placeholder="Try typing ? or help..."
+                            onchange="switchfunction()" list="commandlist">
+                        <datalist id="commandlist">
+                            <option value="help"></option>
+                            <option value="whoami"></option>
+                            <option value="education"></option>
+                            <option value="skills"></option>
+                            <option value="contact"></option>
+                        </datalist>
                     </div>
                     <div>
-                        <span id="output"></span>
+                        <samp>
+                            <span id="output"></span>
+                        </samp>
                     </div>
                 </article>
                 <aside>
