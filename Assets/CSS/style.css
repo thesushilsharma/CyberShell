@@ -1,17 +1,39 @@
 body {
-    margin: 0;
-    padding: 15px 20px;
-    min-height: 99%;
-    width: 100%;
-    min-width: 550px;
-    color: #0AEDEC;
-    background: #211D1B;
-    font-family: cursor, monospace;
-    overflow-x: hidden;
-  }
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  padding: 15px 20px;
+  min-height: 99%;
+  min-width: 550px;
+  color: #0aedec;
+  font-family: cursor, monospace;
+  overflow-x: hidden;
+  background: #121b23; 
+}
 
-  #command {
-    cursor: text;
-    height: 50px;
-    color: #73abad;
-  }
+section {
+  height: 100%;
+  width: 100%;
+}
+
+#command {
+  cursor: text;
+  height: 50px;
+  color: #73abad;
+}
+
+#output {
+  color: #30f403;
+  font-size: 20px;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #3da3e3;
+  color: #303030;
+  text-align: center;
+  font-size: 25px;
+}
