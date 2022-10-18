@@ -37,6 +37,8 @@ function switchfunction() {
       break;
     case "clear":
       console.log("clear");
+      document.getElementById("output").innerHTML="";
+      //commands(clear);
       commands(banner);
       //text = "clear info";
       break;
