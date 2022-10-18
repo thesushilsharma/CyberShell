@@ -51,3 +51,9 @@ var banner = [
 
     "</pre>"
 ].join('<br>');
+
+var invalid = [
+    "<br>",
+    "<p><i>The command was not found. Type <b>Help</b> to see all commands.</i></p>",
+    "<br>"
+].join('<br>');
