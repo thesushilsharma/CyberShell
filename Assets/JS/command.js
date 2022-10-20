@@ -58,3 +58,9 @@ var invalid = [
     "<p><i>The command was not found. Type <b>Help</b> to see all commands.</i></p>",
     "<br>"
 ].join('<br>');
+
+var whois = [
+    "<br>",
+    "<p>JavaScript Based Web Terminal</p>",
+    "<br>"
+].join('<br>');
