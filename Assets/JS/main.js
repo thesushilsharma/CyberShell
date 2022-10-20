@@ -1,12 +1,7 @@
 function switchfunction() {
 
-  // output commands
-  var commands = function (commandoutput) {
-    document.getElementById("output").innerHTML += "<p>" + commandoutput + "</p>";
-  }
   document.querySelector('#terminal').focus()
   var terminal = document.querySelector('#terminal').value.trim().toLowerCase();
-  var text = "";
 
   switch (terminal) {
     case "?":
@@ -37,7 +32,7 @@ function switchfunction() {
       break;
     case "clear":
       console.log("clear");
-      document.getElementById("output").innerHTML="";
+      document.getElementById("output").innerHTML = "";
       //commands(clear);
       commands(banner);
       //text = "clear info";
@@ -47,6 +42,11 @@ function switchfunction() {
       commands(invalid);
       // text = "Command not found";
       break;
+  }
+
+  // output commands
+  function commands(commandoutput) {
+    document.getElementById("output").innerHTML += "<p>" + commandoutput + "</p>";
   }
 
   // document.getElementById("output").innerHTML = text;
