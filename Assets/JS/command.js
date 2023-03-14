@@ -24,6 +24,12 @@ var education = [
     "<br>"
 ].join('<br>');
 
+var date = [
+    "<br>",
+    "Birthday : 10 April",
+    "<br>"
+].join('<br>');
+
 var skills = [
     "<br>",
     "CPP",
@@ -45,12 +51,13 @@ var contact = [
 ].join('<br>');
 
 var banner = [
-    '<span class="index">TheSushilSharma (SS) Not A Corporation. All rights reserved.</span>',
+    "The Sushil Sharma (SS) Not A Corporation. All rights reserved.",
     "<pre>",
-    'Sushil Sharma',
+    "(~    _|_ .|  (~|_  _  _ _ _  _ ",
+    "_)|_|_\| |||  _)| |(_|| | | |(_|",
     "</pre>",
-    '<span class="color2">Welcome to my interactive web terminal.</span>',
-    "<span class=\"color2\">For a list of available commands, type</span> <span class=\"command\">'help'</span><span class=\"color2\">.</span>",
+    "<b>Welcome to my interactive web terminal.</b><br>",
+    "For a list of available commands, type <code>'help'</code>.<br><br>",
 ].join('<br>');
 
 var invalid = [

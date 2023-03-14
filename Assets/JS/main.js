@@ -30,10 +30,19 @@ function handleCommand() {
       commands(contact);
       //text = "contact info";
       break;
+    case "banner":
+      console.log("banner");
+      commands(banner);
+      //text = "banner";
+      break;
+    case "date":
+      console.log("date");
+      commands(date);
+      //text = "date info";
+      break;
     case "clear":
       console.log("clear");
       outputElement.innerHTML = '';
-      //commands(clear);
       commands(banner);
       //text = "clear info";
       break;
@@ -45,10 +54,11 @@ function handleCommand() {
   }
 
   function commands(commandoutput) {
-     outputElement.innerHTML += '<p class="text-red-500">visitor@thesushilsharma:~$; ' + inputElement.value + '</p>';
+    outputElement.innerHTML += '<p class="text-red-500">visitor@thesushilsharma:~$; ' + inputElement.value + '</p>';
     outputElement.innerHTML += '<p>' + commandoutput + '</p>';
     // Clear input field
     inputElement.value = '';
+    window.scrollTo(0, document.body.offsetHeight);
   }
-  
+
 }
