@@ -1,54 +1,45 @@
-function switchfunction() {
+function handleCommand() {
+  const inputElement = document.querySelector('#terminal-input');
+  const outputElement = document.querySelector('#terminal-output');
+  const command = inputElement.value.trim().toLowerCase();
 
-  document.querySelector('#terminal').focus()
-  var terminal = document.querySelector('#terminal').value.trim().toLowerCase();
-
-  switch (terminal) {
-    case "?":
-    case "help":
-      console.log("help");
-      // text = "help info";
+  switch (command) {
+    case '?':
+    case 'help':
+      console.log('help');
       commands(help);
+      //outputElement.innerHTML += '<p>help info</p>';
       break;
-    case "whoami":
-      console.log("whoami");
-      commands(whoami);
-      //text = "whoami info";
+    case 'whoami':
+      console.log('whoami');
+      outputElement.innerHTML += '<p>whoami info</p>';
       break;
-    case "education":
-      console.log("education");
-      commands(education);
-      //text = "education info";
+    case 'education':
+      console.log('education');
+      outputElement.innerHTML += '<p>education info</p>';
       break;
-    case "skills":
-      console.log("skills");
-      commands(skills);
-      //text = "skills info";
+    case 'skills':
+      console.log('skills');
+      outputElement.innerHTML += '<p>skills info</p>';
       break;
-    case "contact":
-      console.log("contact");
-      commands(contact);
-      //text = "contact info";
+    case 'contact':
+      console.log('contact');
+      outputElement.innerHTML += '<p>contact info</p>';
       break;
-    case "clear":
-      console.log("clear");
-      document.getElementById("output").innerHTML = "";
-      //commands(clear);
-      commands(banner);
-      //text = "clear info";
+    case 'clear':
+      console.log('clear');
+      outputElement.innerHTML = '';
       break;
     default:
-      console.log("Command not found");
-      commands(invalid);
-      // text = "Command not found";
+      console.log('Command not found');
+      outputElement.innerHTML += '<p>Command not found</p>';
       break;
   }
 
-  // output commands
   function commands(commandoutput) {
-    document.getElementById("output").innerHTML += "<p>" + commandoutput + "</p>";
+    outputElement.innerHTML += '<p>' + commandoutput + '</p>';
+    // Clear input field
+    inputElement.value = '';
   }
-
-  // document.getElementById("output").innerHTML = text;
 
 }

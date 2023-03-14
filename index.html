@@ -16,13 +16,13 @@
     <main>
         <section>
             <article>
-                <div id="command">
-                    <input type="text" id="terminal" onfocus="this.value=''" value="" placeholder="Try typing ? or help..." onchange="switchfunction()">
-                </div>
                 <div>
                     <samp>
-                        <span id="output"></span>
+                        <span id="terminal-output"></span>
                     </samp>
+                </div>
+                <div id="command">
+                    <input type="text" id="terminal-input" onfocus="this.value=''" value="" placeholder="Try typing ? or help..." onchange="handleCommand()">
                 </div>
             </article>
         </section>
