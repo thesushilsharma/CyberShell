@@ -8,12 +8,12 @@
     <meta name="theme-color" content="#319197" media="(prefers-color-scheme: dark)">
     <meta name="description"
         content="I am a Student and Web developer. Visit my personal portfolio, which is built on the command-line interface (CLI)" />
-    <link rel="stylesheet" href="Assets/CSS/style.css">
-    <title>The Sushil Sharma | Terminal - Portfolio </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>The Sushil Sharma | Terminal - command-line interface </title>
 </head>
 
-<body>
-    <main>
+<body class="bg-gray-900 text-white font-mono">
+    <main class="max-w-xl mx-auto mt-8">
         <section>
             <article>
                 <div>
@@ -21,14 +21,16 @@
                         <span id="terminal-output"></span>
                     </samp>
                 </div>
-                <div id="command">
-                    <input type="text" id="terminal-input" onfocus="this.value=''" value="" placeholder="Try typing ? or help..." onchange="handleCommand()">
+                <div id="command" class="mt-4">
+                    <input type="text" id="terminal-input" onfocus="this.value=''" value=""
+                        placeholder="Try typing ? or help..." onchange="handleCommand()"
+                        class="w-full bg-transparent border-b-2 border-white focus:outline-none focus:border-blue-500">
                 </div>
             </article>
         </section>
     </main>
     <script src="Assets/JS/command.js"></script>
-    <script src="Assets/JS/main.js"></script>
+    <script src="Assets/JS/app.js"></script>
 </body>
 
 </html>
