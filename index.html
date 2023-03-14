@@ -11,9 +11,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>The Sushil Sharma | Terminal - command-line interface </title>
 </head>
-
-<body class="bg-gray-900 text-white font-mono">
-    <main class="flex items-center justify-center h-screen bg-gray-100">
+<body class="font-mono">
+    <main class="flex items-center justify-center h-screen antialiased text-slate-500 bg-slate-300">
         <section class="w-full">
           <article class="bg-gray-900 shadow-xl rounded-lg p-6">
                 <div>
@@ -21,8 +20,8 @@
                         <span id="terminal-output" class="h-72 overflow-y-scroll bg-gray-700 text-gray-100 p-4"></span>
                     </samp>
                 </div>
-                <div id="command" class="mt-4 bg-gray-600 p-4">
-                    <input type="text" id="terminal-input" onfocus="this.value=''" value=""
+                <div id="command" class="fixed bottom-0 left-0 w-full z-10 bg-gray-700 p-4">
+                    <input type="text" id="terminal-input" autofocus onfocus="this.value=''" value=""
                         placeholder="Try typing ? or help..." onchange="handleCommand()"
                         class=" bg-gray-700 text-gray-100 border-none outline-none py-2 px-4 w-full bg-transparent border-b-2 border-white focus:outline-none focus:border-blue-500">
                 </div>
