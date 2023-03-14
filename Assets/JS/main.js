@@ -4,36 +4,44 @@ function handleCommand() {
   const command = inputElement.value.trim().toLowerCase();
 
   switch (command) {
-    case '?':
-    case 'help':
-      console.log('help');
-      commands(help);
-      //outputElement.innerHTML += '<p>help info</p>';
-      break;
-    case 'whoami':
-      console.log('whoami');
-      outputElement.innerHTML += '<p>whoami info</p>';
-      break;
-    case 'education':
-      console.log('education');
-      outputElement.innerHTML += '<p>education info</p>';
-      break;
-    case 'skills':
-      console.log('skills');
-      outputElement.innerHTML += '<p>skills info</p>';
-      break;
-    case 'contact':
-      console.log('contact');
-      outputElement.innerHTML += '<p>contact info</p>';
-      break;
-    case 'clear':
-      console.log('clear');
-      outputElement.innerHTML = '';
-      break;
-    default:
-      console.log('Command not found');
-      outputElement.innerHTML += '<p>Command not found</p>';
-      break;
+    case "?":
+      case "help":
+        console.log("help");
+        // text = "help info";
+        commands(help);
+        break;
+      case "whoami":
+        console.log("whoami");
+        commands(whoami);
+        //text = "whoami info";
+        break;
+      case "education":
+        console.log("education");
+        commands(education);
+        //text = "education info";
+        break;
+      case "skills":
+        console.log("skills");
+        commands(skills);
+        //text = "skills info";
+        break;
+      case "contact":
+        console.log("contact");
+        commands(contact);
+        //text = "contact info";
+        break;
+      case "clear":
+        console.log("clear");
+        document.getElementById("output").innerHTML = "";
+        //commands(clear);
+        commands(banner);
+        //text = "clear info";
+        break;
+      default:
+        console.log("Command not found");
+        commands(invalid);
+        // text = "Command not found";
+        break;
   }
 
   function commands(commandoutput) {
