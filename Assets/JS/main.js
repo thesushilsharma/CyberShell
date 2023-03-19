@@ -2,7 +2,7 @@ const outputElement = document.querySelector('#terminal-output');
 const inputElement = document.querySelector('#terminal-input');
 
 function commands(commandoutput) {
-  outputElement.innerHTML += '<p class="text-red-500">visitor@thesushilsharma:~$; ' + inputElement.value + '</p>';
+  outputElement.innerHTML += '<p class="text-red-500 mt-6">visitor@thesushilsharma:~$; ' + inputElement.value + '</p>';
   outputElement.innerHTML += '<p>' + commandoutput + '</p>';
   // Clear input field
   inputElement.value = '';
@@ -28,6 +28,16 @@ document.addEventListener('DOMContentLoaded', function () {
         commands(whoami);
         //text = "whoami info";
         break;
+        case "experience":
+        console.log("experience");
+        commands(experience);
+        //text = "experience info";
+        break;
+      case "whois":
+        console.log("whois");
+        commands(whois);
+        //text = "whois info";
+        break;
       case "education":
         console.log("education");
         commands(education);
@@ -38,6 +48,7 @@ document.addEventListener('DOMContentLoaded', function () {
         commands(skills);
         //text = "skills info";
         break;
+      case "hey":
       case "contact":
         console.log("contact");
         commands(contact);
@@ -53,11 +64,28 @@ document.addEventListener('DOMContentLoaded', function () {
         commands(date);
         //text = "date info";
         break;
+      case "projects":
+        console.log("projects");
+        commands(projects);
+        setInterval("window.open('https://github.com/thesushilsharma')", 5000);
+        //text = "projects info";
+        break;
       case "clear":
         console.log("clear");
         outputElement.innerHTML = '';
         commands(banner);
         //text = "clear info";
+        break;
+      case "hack":
+        console.log("type Sushil");
+        commands(hack);
+        //text = "skills info";
+        break;
+      case "sushil":
+        //console.log("sushil");
+        commands(sushil);
+        setTimeout("window.open('https://thesushilsharma.github.io')", 5000);
+        //text = "Classified";
         break;
       default:
         console.log("Command not found");
