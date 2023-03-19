@@ -2,25 +2,25 @@ var help = [
     "<br>",
     "Wow, I thought the only people who would visit this site would be bots and spammers, guess I was wrong. <br> Just type any of the commands below to get some more info.",
     "<br>",
-    'whoami - Who is Sushil Sharma',
+    'whoami - I don&apos;t know',
+    'whois - Let&apos;s discover sushil',
     'education - View education history',
     'skills - View tech stack',
-    'contact - get in touch',
+    'contact - Get in touch',
     'date - Display time',
-    'clear - reset the page',
+    'clear - Reset the page',
     "<br>",
 ].join('<br>');
 
 var whoami = [
     "<br>",
-    "Sushil Sharma",
-    "I have expertise designing, developing, and implementing apps and solutions using a variety of technologies and programming languages. ",
+    "Introspecting myself while lost in the Himalayas",
     "<br>"
 ].join('<br>');
 
 var education = [
     "<br>",
-    "Bachelor of Computer",
+    "Bachelor of Computer Science",
     "<br>"
 ].join('<br>');
 
@@ -32,20 +32,21 @@ var date = [
 
 var skills = [
     "<br>",
-    "CPP",
+    "C++",
     "Java",
     "PHP",
     "JavaScript",
     "HTML5",
     "CSS3",
+    "SQL",
     "<br>"
 ].join('<br>');
 
 var contact = [
     "<br>",
     'You can contact me on any of the following links:<br>',
-    '"<a target="_blank" rel="noopener noreferrer" href="https://github.com/thesushilsharma">GitHub</a>"',
-    '"<a target="_blank" rel="noopener noreferrer" href="https://medium.com/@thesushilsharma">Medium</a>"',
+    '<a target="_blank" rel="noopener noreferrer" href="https://github.com/thesushilsharma">GitHub</a>',
+    '<a target="_blank" rel="noopener noreferrer" href="https://medium.com/@thesushilsharma">Medium</a>',
     '"<a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/thesushilsharma">Linkedin</a>"',
     "<br>"
 ].join('<br>');
@@ -68,6 +69,8 @@ var invalid = [
 
 var whois = [
     "<br>",
-    "<p>JavaScript Based Web Terminal</p>",
+    "<p>Hi I am Sushil Sharma",
+    "I am a developer programmer focusing on web development and designing. I believe that learning to", "code at a young age is incredibly advantageous since it fosters the growth of problem-solving and", "critical-thinking abilities that are helpful in many facets of life. I always look forward to", "learning new things, and I rapidly pick up new languages and frameworks. I also look into other", "technologies, such as web development, front-end development, and back-end programming. I always", "look forward to broadening my skill set by learning new things and coming up with creative solutions",
+    "based on my expertise. Also, I have a strong technical background in IT/Corporate strategies and", "digital transformation, which enables me to advise teams and startups as they develop concepts,", "value propositions, and production-ready solutions.</p>",
     "<br>"
 ].join('<br>');
