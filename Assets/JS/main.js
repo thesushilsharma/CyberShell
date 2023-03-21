@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function () {
       case "projects":
         console.log("projects");
         commands(projects);
-        setInterval("window.open('https://github.com/thesushilsharma')", 5000);
+        setTimeout("window.open('https://github.com/thesushilsharma')", 5000);
         //text = "projects info";
         break;
       case "clear":

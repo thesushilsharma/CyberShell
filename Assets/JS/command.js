@@ -27,7 +27,7 @@ var hack = [
     "<br>"
 ].join('<br>');
 
-var expereience = [
+var experience = [
     "<br>",
     "Developer Programmer",
     "<br>"
