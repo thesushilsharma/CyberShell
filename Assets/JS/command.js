@@ -1,19 +1,44 @@
+// var help = [
+//     "<br>",
+//     "Wow, I thought the only people who would visit this site would be bots and spammers, guess I was wrong. <br> Just type any of the commands below to get some more info.",
+//     "<br>",
+//     '<span class="text-blue-500 text-base">whoami</span> - I don&apos;t know',
+//     '<span class="text-blue-500 text-base">whois</span> - Let&apos;s discover SUSHIL',
+//     '<span class="text-blue-500 text-base">education</span> - View education history',
+//     '<span class="text-blue-500 text-base">experience</span> - View experience history',
+//     '<span class="text-blue-500 text-base">skills</span> - View tech stack',
+//     '<span class="text-blue-500 text-base">contact</span> - Get in touch',
+//     '<span class="text-blue-500 text-base">projects</span> - Miscellaneous Projects',
+//     '<span class="text-blue-500 text-base">date</span> - Display birth date',
+//     '<span class="text-blue-500 text-base">clear</span> - Reset the page',
+//     '<span class="text-blue-500 text-base">hack</span> - secret',
+//     "<br>",
+// ].join('<br>');
+
+
 var help = [
     "<br>",
     "Wow, I thought the only people who would visit this site would be bots and spammers, guess I was wrong. <br> Just type any of the commands below to get some more info.",
     "<br>",
-    '<span class="text-blue-500 text-base">whoami</span> - I don&apos;t know',
-    '<span class="text-blue-500 text-base">whois</span> - Let&apos;s discover SUSHIL',
-    '<span class="text-blue-500 text-base">education</span> - View education history',
-    '<span class="text-blue-500 text-base">experience</span> - View experience history',
-    '<span class="text-blue-500 text-base">skills</span> - View tech stack',
-    '<span class="text-blue-500 text-base">contact</span> - Get in touch',
-    '<span class="text-blue-500 text-base">projects</span> - Miscellaneous Projects',
-    '<span class="text-blue-500 text-base">date</span> - Display birth date',
-    '<span class="text-blue-500 text-base">clear</span> - Reset the page',
-    '<span class="text-blue-500 text-base">hack</span> - secret',
+    '+========================================================================================+',
+    '| Commands   | Descriptions                                                              |',
+    '+========================================================================================+',
+    '| <span class="text-blue-500 text-base">whois</span>      | Let&apos;s discover SUSHIL                                                |',
+    '| <span class="text-blue-500 text-base">whoami</span>     | I don&apos;t know                                                         |',
+    '| <span class="text-blue-500 text-base">projects</span>   | Miscellaneous Coding Projects                                             |',
+    '| <span class="text-blue-500 text-base">contact</span>    | Get in Touch                                                              |',
+    '| <span class="text-blue-500 text-base">help</span>       | if you know, you know.                                                    |',
+    '| <span class="text-blue-500 text-base">hack</span>       | Game                                                                      |',
+    '| <span class="text-blue-500 text-base">clear</span>      | Clear terminal                                                            |',
+    '| <span class="text-blue-500 text-base">date</span>       | Display birth date                                                        |',
+    '| <span class="text-blue-500 text-base">skills</span>     | View tech stack                                                           |',
+    '| <span class="text-blue-500 text-base">experience</span> | View experience history                                                   |',
+    '| <span class="text-blue-500 text-base">education</span>  | View education history.                                                   |',
+    '+========================================================================================+',
     "<br>",
 ].join('<br>');
+
+
 
 var whoami = [
     "<br>",
@@ -103,3 +128,4 @@ var whois = [
     "based on my expertise. Also, I have a strong technical background in IT/Corporate strategies and", "digital transformation, which enables me to advise teams and startups as they develop concepts,", "value propositions, and production-ready solutions.</p>",
     "<br>"
 ].join('<br>');
+
