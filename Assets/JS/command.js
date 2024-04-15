@@ -20,26 +20,25 @@ var help = [
     "<br>",
     "Wow, I thought the only people who would visit this site would be bots and spammers, guess I was wrong. <br> Just type any of the commands below to get some more info.",
     "<br>",
-    "<pre>",
+    '<pre class="text-xs font-mono">',
     '+============================================+',
-    '| Commands   | Descriptions                  |',
+    '| Commands     | Descriptions                |',
     '+============================================+',
-    '| <span class="text-blue-500 text-base">whois</span>      | Let&apos;s discover SUSHIL         |',
-    '| <span class="text-blue-500 text-base">whoami</span>     | I don&apos;t know                  |',
-    '| <span class="text-blue-500 text-base">projects</span>   | Miscellaneous Coding Projects |',
-    '| <span class="text-blue-500 text-base">contact</span>    | Get in Touch                  |',
-    '| <span class="text-blue-500 text-base">help</span>       | if you know, you know.        |',
-    '| <span class="text-blue-500 text-base">hack</span>       | Game                          |',
-    '| <span class="text-blue-500 text-base">clear</span>      | Clear terminal                |',
-    '| <span class="text-blue-500 text-base">date</span>       | Display birth date            |',
-    '| <span class="text-blue-500 text-base">skills</span>     | View tech stack               |',
-    '| <span class="text-blue-500 text-base">experience</span> | View experience history       |',
-    '| <span class="text-blue-500 text-base">education</span>  | View education history.       |',
+    '| <span class="text-blue-500 text-sm">whois</span>      | Let&apos;s discover SUSHIL         |',
+    '| <span class="text-blue-500 text-sm">whoami</span>     | I don&apos;t know                  |',
+    '| <span class="text-blue-500 text-sm">projects</span>   | Miscellaneous Coding Projects |',
+    '| <span class="text-blue-500 text-sm">contact</span>    | Get in Touch                  |',
+    '| <span class="text-blue-500 text-sm">help</span>       | if you know, you know.        |',
+    '| <span class="text-blue-500 text-sm">hack</span>       | Game                          |',
+    '| <span class="text-blue-500 text-sm">clear</span>      | Clear terminal                |',
+    '| <span class="text-blue-500 text-sm">date</span>       | Display birth date            |',
+    '| <span class="text-blue-500 text-sm">skills</span>     | View tech stack               |',
+    '| <span class="text-blue-500 text-sm">experience</span> | View experience history       |',
+    '| <span class="text-blue-500 text-sm">education</span>  | View education history.       |',
     '+============================================+',
     "</pre>",
     "<br>",
 ].join('<br>');
-
 
 var whoami = [
     "<br>",
@@ -107,13 +106,15 @@ var contact = [
 ].join('<br>');
 
 var banner = [
+    '<div class="container mx-auto px-4 pb-8">',
     "The Sushil Sharma (SS) Not A Corporation. All rights reserved.",
-    "<pre>",
+    '<pre class="text-xs font-mono">',
     "(~    _|_ .|  (~|_  _  _ _ _  _ ",
     "_)|_|_\| |||  _)| |(_|| | | |(_|",
     "</pre>",
-    "<b>Welcome to my interactive web terminal.</b><br>",
-    "<p>For a list of available commands, type <code>'help'</code>.</p><br>",
+    '<b class="font-semibold text-gray-900 underline dark:text-white decoration-green-500">Welcome to my interactive web terminal.</b><br>',
+    '<p class="text-sm">For a list of available commands, type <code>"help"</code>.</p><br>',
+    '</div>',
 ].join('<br>');
 
 var invalid = [

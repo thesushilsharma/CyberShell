@@ -11,12 +11,14 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>The Sushil Sharma | Terminal - command-line interface </title>
 </head>
+
 <body class="font-mono">
     <main class="flex items-center justify-center h-screen antialiased text-slate-500 bg-slate-300">
         <section class="w-full">
-            <article class="bg-gray-900 shadow-xl rounded-lg p-6">
-                <div class="pt-4">
-                    <samp id="terminal-output" class="bg-gray-700 text-gray-100 p-4"></samp>
+            <article class="bg-gray-900 shadow-xl rounded-lg p-6 sm:w-full">
+                <div class="container mx-auto px-4 pb-8">
+                    <samp id="terminal-output" class="rounded-lg overflow-auto bg-gray-700 text-gray-100 p-4">
+                    </samp>
                 </div>
                 <div id="command" class="left-0 w-full bg-gray-700 z-10">
                     <input type="text" id="terminal-input" autofocus placeholder="Try typing ? or help..."
