@@ -1,11 +1,12 @@
 # Terminal-Website
-This project is a unique and immersive web experience that mimics a terminal interface with typing animations and a retro hacker aesthetic. It’s designed to showcase my skills, projects, and personality in a fun and interactive way.
+This project is a unique, immersive web experience that mimics a terminal interface with typing animations and a retro hacker aesthetic. It’s designed to showcase my skills, projects, and personality in a fun and interactive way.
 
 ## Installation 
 To install this project, clone the repository to your local machine, open the index.html file in your web browser, or Launch a local development server (Live Server - VS Code Extension).
 
 ## Technologies Used
-- [ ] TypeScript
+- [ ] Ruby
+- [ ] Rails
 - [x]  Tailwind CSS
 
 ## Reference's 
