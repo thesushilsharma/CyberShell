@@ -5,9 +5,9 @@ This project is a unique, immersive web experience that mimics a terminal interf
 To install this project, clone the repository to your local machine, open the index.html file in your web browser, or Launch a local development server (Live Server - VS Code Extension).
 
 ## Technologies Used
-- [ ] Ruby
-- [ ] Rails
 - [x]  Tailwind CSS
+- [ ] 
+- [ ] 
 
 ## Reference's 
 - [M4TT72](https://term.m4tt72.com)
