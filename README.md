@@ -20,4 +20,4 @@ To install this project, clone the repository to your local machine, open the in
 To contribute to this project, please submit any issues or pull requests on the GitHub repository.
 
 ## License
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is licensed under the MIT License.  See the [LICENSE](LICENSE) file for details.
