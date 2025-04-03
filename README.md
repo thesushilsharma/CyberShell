@@ -7,7 +7,8 @@ To install this project, clone the repository to your local machine, open the in
 ## Technologies Used
 - [x] Tailwind CSS
 - [ ] Next Js
-- [ ] 
+- [ ] Typescript
+- [ ] Zod
 
 ## Reference's 
 - [M4TT72](https://term.m4tt72.com)
