@@ -1,4 +1,4 @@
-# Terminal-Website
+# CyberShell
 This project is a unique, immersive web experience that mimics a terminal interface with typing animations and a retro hacker aesthetic. It’s designed to showcase my skills, projects, and personality in a fun and interactive way.
 
 ## Installation 
