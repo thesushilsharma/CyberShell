@@ -4,6 +4,11 @@ This project is a unique, immersive web experience that mimics a terminal interf
 ## Installation 
 To install this project, clone the repository to your local machine, open the index.html file in your web browser, or Launch a local development server (Live Server - VS Code Extension).
 
+## Pre-requisites
+
+- [Node.JS 12+](https://nodejs.org/en/)
+- VS Code or any Code
+
 ## Technologies Used
 - [x] Tailwind CSS
 - [ ] Next Js
