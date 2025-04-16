@@ -2,7 +2,15 @@
 This project is a unique, immersive web experience that mimics a terminal interface with typing animations and a retro hacker aesthetic. It’s designed to showcase my skills, projects, and personality in a fun and interactive way.
 
 ## Installation 
-To install this project, clone the repository to your local machine, open the index.html file in your web browser, or Launch a local development server (Live Server - VS Code Extension).
+Clone the repository and install dependencies:
+
+```bash
+git clone https://github.com/thesushilsharma/CyberShell.git
+cd CyberShell
+npm install
+npm run dev
+```
+
 
 ## Pre-requisites
 
@@ -11,7 +19,7 @@ To install this project, clone the repository to your local machine, open the in
 
 ## Technologies Used
 - [x] Tailwind CSS
-- [ ] Next Js
+- [ ] Next.js
 - [ ] Typescript
 - [ ] Zod
 
