@@ -19,9 +19,9 @@ npm run dev
 
 ## Technologies Used
 - [x] Tailwind CSS
-- [ ] Next.js
-- [ ] Typescript
-- [ ] Zod
+- [x] Next.js
+- [x] Typescript
+- [X] Zod
 
 ## Reference's 
 - [M4TT72](https://term.m4tt72.com)
