@@ -6,15 +6,20 @@ import { Terminal } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { commands } from "@/lib/commands";
 import { CommandInputSchema } from "@/lib/types/schema";
+import { TerminalProvider, useTerminal } from "@/hooks/useTerminal";
 
-export default function Home() {
-  const [history, setHistory] = useState<
-    Array<{ input: string; output: string }>
-  >([]);
-  const [input, setInput] = useState("");
+
+function TerminalComponent() {
+  const {
+    history,
+    input,
+    isTyping,
+    typingOutput,
+    setInput,
+    handleCommand,
+  } = useTerminal();
+  
   const [bootSequence, setBootSequence] = useState(true);
-  const [typingOutput, setTypingOutput] = useState<string>("");
-  const [isTyping, setIsTyping] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
   const terminalRef = useRef<HTMLDivElement>(null);
   const router = useRouter();
@@ -22,98 +27,26 @@ export default function Home() {
   useEffect(() => {
     const bootTimer = setTimeout(() => {
       setBootSequence(false);
-      setHistory([
-        {
-          input: "banner",
-          output: commands.banner.execute([]),
-        },
-      ]);
-      handleCommand("welcome");
+      handleCommand('banner');
+      handleCommand('welcome');
     }, 2000);
 
     return () => clearTimeout(bootTimer);
-  }, []);
+  }, [handleCommand]);
 
   useEffect(() => {
     if (terminalRef.current) {
       terminalRef.current.scrollTop = terminalRef.current.scrollHeight;
     }
   }, [history]);
-
-  const typeOutput = async (text: string) => {
-    setIsTyping(true);
-    setTypingOutput("");
-
-    for (let i = 0; i < text.length; i++) {
-      await new Promise((resolve) => setTimeout(resolve, 30));
-      setTypingOutput((prev) => prev + text[i]);
-    }
-
-    setIsTyping(false);
-    setHistory((prev) => [...prev, { input: "welcome", output: text }]);
-    setTypingOutput("");
-  };
-
-  const handleCommand = (cmd: string) => {
-    const trimmedCmd = cmd.trim().toLowerCase();
-    const cmdParts = trimmedCmd.split(" ");
-
-    try {
-      const parsedCommand = CommandInputSchema.parse({
-        command: cmdParts[0],
-        args: cmdParts.slice(1),
-      });
-
-      const command = commands[parsedCommand.command as keyof typeof commands];
-
-      if (!command) {
-        setHistory((prev) => [
-          ...prev,
-          {
-            input: cmd,
-            output: `Command not found: ${parsedCommand.command}`,
-          },
-        ]);
-        return;
-      }
-
-      const output = command.execute(parsedCommand.args);
-
-      if (parsedCommand.command === "clear") {
-        setHistory([]);
-        return;
-      }
-
-      if (output.startsWith("NAVIGATE:")) {
-        const dir = output.split(":")[1];
-        router.push(`/${dir}`);
-        return;
-      }
-
-      if (parsedCommand.command === "welcome") {
-        typeOutput(output);
-        return;
-      }
-
-      setHistory((prev) => [...prev, { input: cmd, output }]);
-    } catch (error: unknown) {
-      console.log("error", error);
-      setHistory((prev) => [
-        ...prev,
-        {
-          input: cmd,
-          output: "Invalid command format",
-        },
-      ]);
-    }
-  };
+  
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!input.trim()) return;
 
     handleCommand(input);
-    setInput("");
+    setInput('');
   };
 
   return (
@@ -190,5 +123,13 @@ export default function Home() {
         </AnimatePresence>
       </motion.div>
     </div>
+  );
+}
+
+export default function Home() {
+  return (
+    <TerminalProvider>
+      <TerminalComponent />
+    </TerminalProvider>
   );
 }

@@ -1,5 +1,6 @@
 import { BANNER, WELCOME_MSG } from "./banner";
 import { DIRECTORIES } from "./dir";
+import { ROBOTS_TXT, SOURCE_CODE } from "./easter-egg";
 import { Command } from "./types/schema";
 
 
@@ -228,5 +229,51 @@ Time to see how deep the rabbit hole goes...
 “Be careful what you wish for, you may get it” - Nyota Uhura
 ${".".repeat(50)}
 `,
+  },
+  source: {
+    description: 'View source code',
+    execute: () => SOURCE_CODE,
+  },
+  decode: {
+    description: 'Decode hidden message',
+    execute: () => `
+[DECODING MESSAGE]
+01001000 01100101 01101100 01101100 01101111
+...
+[DECODED]
+"The cake is a lie, but the coffee is real. ☕"
+    `,
+  },
+  robots: {
+    description: 'View robots.txt',
+    execute: () => ROBOTS_TXT,
+  },
+  sudo: {
+    description: 'Gain elevated access',
+    execute: () => `
+[SUDO ACCESS REQUESTED]
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+░░░░░░░░░░░░░░░▄▄▄▄▄▄▄░░░░░░
+░░░░░░░░░▄▀▀▀░░░░░░░▀▄░░░░░░
+░░░░░░░▄▀░░░░░░░░░░░░▀▄░░░░░
+░░░░░░▄▀░░░░░░░░░░▄▀▀▄▀▄░░░░
+░░░░▄▀░░░░░░░░░░▄▀░░██▄▀▄░░░
+░░░▄▀░░▄▀▀▀▄░░░░█░░░▀▀░█▀▄░░
+░░░█░░█▄▄░░░█░░░▀▄░░░░░▐░█░░
+░░▐▌░░█▀▀░░▄▀░░░░░▀▄▄▄▄▀░░█░
+░░▐▌░░█░░░▄▀░░░░░░░░░░░░░░█░
+░░▐▌░░░▀▀▀░░░░░░░░░░░░░░░░▐▌
+░░▐▌░░░░░░░░░░░░░░░▄░░░░░░▐▌
+░░▐▌░░░░░░░░░▄░░░░░█░░░░░░▐▌
+░░░█░░░░░░░░░▀█▄░░▄█░░░░░░▐▌
+░░░▐▌░░░░░░░░░░▀▀▀▀░░░░░░░▐▌
+░░░░█░░░░░░░░░░░░░░░░░░░░░█░
+░░░░▐▌▀▄░░░░░░░░░░░░░░░░░▐▌░
+░░░░░█░░▀░░░░░░░░░░░░░░░░▀░░
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+
+[ACCESS DENIED]
+Nice try! But you'll need more than that to gain root access...
+    `,
   },
 };
