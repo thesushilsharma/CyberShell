@@ -11,7 +11,6 @@ npm install
 npm run dev
 ```
 
-
 ## Pre-requisites
 
 - [Node.JS 12+](https://nodejs.org/en/)
@@ -22,6 +21,11 @@ npm run dev
 - [x] Next.js
 - [x] Typescript
 - [X] Zod
+
+## Easter Egg 
+- [x] Console.log
+- [x] Source Code (View page source)
+- [x] Robot.txt
 
 ## Reference's 
 - [M4TT72](https://term.m4tt72.com)
